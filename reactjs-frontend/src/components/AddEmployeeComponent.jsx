@@ -45,14 +45,14 @@ const AddEmployeeComponent = () => {
 
     const title = () => {
         if(id){
-            return <h2 className='text-center'>Update Employee</h2>
+            return <h2 className='text-center mt-2'>Update Employee</h2>
         }else{
-            return <h2 className='text-center'>Add Employee</h2>
+            return <h2 className='text-center mt-2'>Add Employee</h2>
         }
     }
 
     return (
-        <div>
+        <div className='mt-4'>
             <div className='container'>
                 <div className='row'>
                     <div className='card col-md-6 offset-md-3 offset-md-3'>

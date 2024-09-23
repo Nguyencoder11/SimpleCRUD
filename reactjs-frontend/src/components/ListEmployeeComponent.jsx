@@ -27,7 +27,6 @@ const ListEmployeeComponent = () => {
             console.log(error);
             
         })
-        
     }
 
     return (
@@ -53,6 +52,7 @@ const ListEmployeeComponent = () => {
                                 <td>
                                     <Link to={`/edit-employee/${employee.id}`} className='btn btn-info'>Update</Link>
                                     <button className='btn btn-danger ml-2' onClick={() => deleteEmployee(employee.id)}>Delete</button>
+                                    <Link className='btn btn-info ml-2' to={`/view-employee/${employee.id}`}>View</Link>
                                 </td>
                             </tr>
                         )
